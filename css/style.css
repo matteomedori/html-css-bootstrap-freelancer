@@ -18,3 +18,7 @@ MAIN
 #first-sect {
   background-color: #1abc9c;
 }
+
+#second-sect .col .content {
+  border: 1px solid black;
+}
