@@ -15,7 +15,8 @@ MAIN
 ------------
 */
 
-#first-sect {
+#first-sect,
+#third-sect {
   background-color: #1abc9c;
 }
 
