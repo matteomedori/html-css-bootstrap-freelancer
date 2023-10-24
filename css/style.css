@@ -2,12 +2,24 @@
 
 /*
 ------------
+VARIABLES
+------------
+*/
+
+:root {
+  --my-bg-main: #2c3e50;
+  --my-bg-secondary: #1abc9c;
+  --my-bg-main-darker: #3a546d;
+}
+
+/*
+------------
 HEADER
 ------------
 */
 
 header {
-  background-color: #2c3e50;
+  background-color: var(--my-bg-main);
 }
 
 /*
@@ -17,18 +29,21 @@ MAIN
 */
 
 #start,
-#about {
-  background-color: #1abc9c;
+#about,
+#contact button {
+  background-color: var(--my-bg-secondary);
 }
 
-#contact button {
-  background-color: #1abc9c;
+#portfolio,
+#contact {
+  color: var(--my-bg-main);
 }
 
 #portfolio .my-divisor-icon,
 #contact .my-divisor-icon {
   --bg-main-divisor: #2c3e50;
 }
+
 /*
 ------------
 FOOTER
@@ -36,11 +51,67 @@ FOOTER
 */
 
 footer #footer-first {
-  background-color: #3a546d;
-  color: white;
+  background-color: var(--my-bg-main-darker);
 }
 
 footer #footer-second {
-  background-color: #2c3e50;
-  color: white;
+  background-color: var(--my-bg-main);
+}
+
+#footer-first em {
+  color: var(--my-bg-secondary);
+  font-style: normal;
+}
+
+#footer-second {
+  font-size: 10px;
+}
+
+/*
+------------
+RESPONSIVE
+------------
+*/
+
+/*da 992 px in poi (large)*/
+@media screen and (min-width: 992px) {
+  .my-font-size-h1 {
+    font-size: 47px;
+  }
+
+  #start .my-font-size-h6 {
+    font-size: 18px;
+  }
+
+  #portfolio .my-font-size-h2,
+  #about .my-font-size-h4,
+  #contact .my-font-size-h4 {
+    font-size: 40px;
+  }
+
+  #footer-first .my-font-size-h6 {
+    font-size: 20px;
+  }
+
+  #start .my-divisor-icon::before,
+  #start .my-divisor-icon::after,
+  #portfolio .my-divisor-icon::before,
+  #portfolio .my-divisor-icon::after {
+    width: 30%;
+  }
+
+  #contact .my-divisor-icon::before,
+  #contact .my-divisor-icon::after,
+  #about .my-divisor-icon::before,
+  #about .my-divisor-icon::after {
+    width: 20%;
+  }
+}
+
+/*da 1400 px in poi (xl)*/
+@media screen and (min-width: 1400px) {
+  #start .my-divisor-icon::before,
+  #start .my-divisor-icon::after {
+    width: 25%;
+  }
 }
