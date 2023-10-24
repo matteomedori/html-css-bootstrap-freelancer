@@ -18,12 +18,40 @@
   </head>
   <body>
     <!-- header -->
-    <header>
-      <div class="container py-4">
-        <div class="row justify-content-between">
-          <div class="col-auto">colonna 1</div>
-          <div class="col-auto">colonna 2</div>
-        </div>
+    <header class="py-3">
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg text-uppercase"
+          data-bs-theme="dark"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Start Bootstrap</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0 ms-auto fw-semibold">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-disabled="true">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </header>
     <!-- /header -->
@@ -31,14 +59,14 @@
     <!-- main -->
     <main>
       <!-- first section -->
-      <section id="first-sect">
-        <div class="container py-3">
-          <div class="row text-center">
-            <div class="col-10 col-md-8 col-xl-7 mx-auto mb-2">img</div>
-            <div class="col-10 col-md-8 col-xl-7 mx-auto mb-2">titolo</div>
-            <div class="col-10 col-md-8 col-xl-7 mx-auto mb-2">hr</div>
-            <div class="col-10 col-md-8 col-xl-7 mx-auto">
-              -----------------------------------------------------------------
+      <section id="first-sect" class="py-3">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div>img</div>
+              <div>titolo</div>
+              <div>hr</div>
+              <div>testo</div>
             </div>
           </div>
         </div>
@@ -46,11 +74,11 @@
       <!-- /first section -->
 
       <!-- second section -->
-      <section id="second-sect">
-        <div class="container py-3 text-center">
+      <section id="second-sect" class="py-3">
+        <div class="container text-center">
           <div class="mb-2">titolo</div>
           <div class="mb-2">hr</div>
-          <div class="row gy-2 row-cols-1 row-cols-md-2 row-cols-xl-3">
+          <div class="row g-2 row-cols-1 row-cols-md-2 row-cols-xl-3">
             <div class="col">
               <div class="content">img</div>
             </div>
