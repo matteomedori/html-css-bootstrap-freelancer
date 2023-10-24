@@ -1,3 +1,5 @@
+@import "./components/components.css";
+
 /*
 ------------
 HEADER
@@ -14,15 +16,14 @@ MAIN
 ------------
 */
 
-#first-sect,
-#third-sect {
+#start,
+#about {
   background-color: #1abc9c;
 }
 
-#second-sect .col .content {
-  border: 1px solid black;
+#contact button {
+  background-color: #1abc9c;
 }
-
 /*
 ------------
 FOOTER

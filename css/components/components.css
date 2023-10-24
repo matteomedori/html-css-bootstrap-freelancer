@@ -1,0 +1,33 @@
+/* divisor with icon at center*/
+.my-divisor-icon::before {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 35%;
+  background-color: white;
+  vertical-align: super;
+  border-radius: 10px;
+}
+
+.my-divisor-icon::after {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 35%;
+  background-color: white;
+  vertical-align: super;
+  border-radius: 10px;
+}
+/* /divisor with icon at center*/
+
+/* container img*/
+.my-component-container-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.my-component-container-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* /container img*/
