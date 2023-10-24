@@ -24,6 +24,11 @@ MAIN
 #contact button {
   background-color: #1abc9c;
 }
+
+#portfolio .my-divisor-icon,
+#contact .my-divisor-icon {
+  --bg-main-divisor: #2c3e50;
+}
 /*
 ------------
 FOOTER
