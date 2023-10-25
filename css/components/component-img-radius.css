@@ -1,0 +1,11 @@
+/* container img with border radius*/
+.my-component-container-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.my-component-container-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* /container img with border radius*/
